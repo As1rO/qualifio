@@ -1,0 +1,65 @@
+.title {
+  text-transform: uppercase;
+  opacity: 0;
+  transform: translate(-100px);
+}
+
+.title--h1 {
+  font-weight: 500;
+  letter-spacing: 1.16667px;
+
+  font-size: 1.6rem;
+  margin: 0;
+  padding-left: 25px;
+}
+
+.title--mid {
+  font-size: 1.8rem;
+  font-weight: 500;
+  letter-spacing: 1.16667px;
+
+  @include md {
+    font-size: 3.6rem;
+  }
+}
+
+.p-big {
+  font-weight: 500;
+  letter-spacing: 1.16667px;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  opacity: 0;
+  transform: translate(-100px);
+
+  @include md {
+    font-size: 4.8rem;
+  }
+}
+
+.strong-color {
+  color: rgba(255, 86, 92, 1);
+}
+
+.title--small {
+  font-weight: 500;
+  font-size: 1.8rem;
+  color: rgba(255, 86, 92, 1);
+  letter-spacing: 1.16667px;
+  text-transform: uppercase;
+}
+
+.p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 27px;
+  letter-spacing: 1.16667px;
+  text-transform: uppercase;
+  max-width: 300px;
+
+  @include md {
+    font-size: 2.4rem;
+    line-height: 37px;
+    max-width: 500px;
+  }
+}

@@ -1,0 +1,33 @@
+.button-nav {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  background-image: url(../images/nav.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  text-indent: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  top: 35px;
+  right: 20px;
+  z-index: 90;
+  outline: none;
+  margin-top: 10px;
+}
+
+.icon {
+  width: 42px;
+  height: 61px;
+  background-color: transparent;
+  display: inline-block;
+  margin-top: 25px;
+  cursor: pointer;
+  background-image: url(../images/Icon.png);
+  border: 0;
+  opacity: 0;
+  transform: translate(-100px);
+}

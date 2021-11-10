@@ -10,11 +10,194 @@
 
 .body {
   position: relative;
-  width: 200vw;
-  overflow-x: hidden;
-  overflow-y: hidden;
-
-  font-family: "Roboto", sans-serif;
-  font-size: 1.8rem;
+  width: 100vw;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.6rem;
   line-height: 1.4;
+}
+
+.header {
+  background-color: var(--bg-header);
+  width: 100vw;
+  position: fixed;
+  z-index: 50;
+  top: 0;
+}
+
+.header-container {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0px;
+}
+
+.header-flex {
+  display: flex;
+  align-items: center;
+}
+
+.section--1 {
+  background-color: var(--bg-header);
+
+  .background {
+    position: fixed;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  .video {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+
+    @include md {
+      height: 600px;
+    }
+  }
+
+  .margin {
+    position: relative;
+    padding-top: 100px;
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1100px;
+  }
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  background-color: var(--bg-header);
+  max-width: 1100px;
+  padding-bottom: 25px;
+}
+
+.container-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+}
+
+.container-info {
+  padding-top: 25px;
+  padding-left: 10px;
+
+  @include md {
+    padding-top: 35px;
+    padding-left: 50px;
+  }
+}
+
+.form-container {
+  padding-top: 50px;
+  padding-left: 10px;
+  @include md {
+    padding-top: 50px;
+    padding-left: 50px;
+  }
+
+  input {
+    border: none;
+    background: transparent;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid white;
+    font-size: 16px;
+    color: #fff;
+
+    @include md {
+      font-size: 1.8rem;
+    }
+
+    &::placeholder {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: 0.6px;
+      text-transform: uppercase;
+      color: #ffffff;
+    }
+  }
+  input[type="text"] {
+    outline: transparent;
+    width: 80%;
+    max-width: 420px;
+    @include md {
+      width: 100%;
+      width: 420px;
+    }
+  }
+  input[type="email"] {
+    outline: transparent;
+    width: 80%;
+    max-width: 420px;
+    @include md {
+      width: 100%;
+      width: 420px;
+    }
+  }
+  input[type="number"] {
+    outline: transparent;
+    width: 80%;
+    max-width: 420px;
+    @include md {
+      width: 100%;
+      width: 420px;
+    }
+  }
+  input[type="submit"] {
+    display: inline-block;
+    background-color: rgba(255, 86, 92, 1);
+    width: 80%;
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    border: none;
+    padding-bottom: 0px;
+    padding: 15px;
+    margin-bottom: 15px;
+    max-width: 420px;
+    cursor: pointer;
+    @include md {
+      width: 100%;
+    }
+  }
+}
+
+.mentions-legales {
+  margin-bottom: 50px;
+
+  p {
+    font-size: 10px;
+    line-height: 15px;
+    letter-spacing: 0.6px;
+    text-transform: lowercase;
+    color: #ffffff;
+  }
+}
+
+.dvd {
+  max-width: 400px;
+  height: auto;
+  object-fit: cover;
+}
+
+.flex {
+  @include md {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 50px;
+    align-items: center;
+  }
 }
