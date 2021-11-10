@@ -1,0 +1,20 @@
+@import "variables";
+@import "reset";
+@import "classes";
+@import "media-queries";
+@import "utils";
+@import "base";
+@import "titles";
+@import "buttons";
+@import "animations";
+
+.body {
+  position: relative;
+  width: 200vw;
+  overflow-x: hidden;
+  overflow-y: hidden;
+
+  font-family: "Roboto", sans-serif;
+  font-size: 1.8rem;
+  line-height: 1.4;
+}
