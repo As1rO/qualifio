@@ -1,7 +1,8 @@
 .title {
   text-transform: uppercase;
   opacity: 0;
-  transform: translate(-100px);
+  opacity: 1;
+  // transform: translate(-100px);
 }
 
 .title--h1 {
@@ -28,8 +29,8 @@
   letter-spacing: 1.16667px;
   font-size: 2.4rem;
   text-transform: uppercase;
-  opacity: 0;
-  transform: translate(-100px);
+  opacity: 1;
+  // transform: translate(-100px);
 
   @include md {
     font-size: 4.8rem;

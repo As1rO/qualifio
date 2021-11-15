@@ -11,3 +11,17 @@
 .display {
   display: none;
 }
+
+.opacity-remove {
+  animation: opacityRemove;
+  animation-duration: 0.7s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  animation-delay: 0.7s;
+}
+
+@keyframes opacityRemove {
+  100% {
+    opacity: 0;
+  }
+}

@@ -26,6 +26,10 @@ module.exports = {
         test: /\.scss$/i,
         use: ["style-loader", "css-loader", "sass-loader"],
       },
+      {
+        test: /\.(mp4|m4v)$/,
+        use: "file-loader?name=videos/[name].[ext]",
+      },
     ],
   },
   plugins: [
